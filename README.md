@@ -69,7 +69,7 @@ A partir de ese documento deberán estructurar el sitio agregando secciones como
 
 - Inicio
 - ¿Qué es POLARIS?
-- Modelo de formación
+- Modelo de formación 
 - Equipos del programa
 - Eventos
 - Desarrollo tecnológico

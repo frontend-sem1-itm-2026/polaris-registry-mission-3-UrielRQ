@@ -3,31 +3,117 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro POLARIS</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-<h1>Registro de Miembros POLARIS</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top border-bottom border-secondary">
+        <div class="container">
+            <a class="navbar-brand brand-text" href="index.html">🚀 POLARIS</a>
 
-<form>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-<label>Nombre completo</label><br>
-<input type="text"><br><br>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link btn-polaris text-white ms-2 px-3" href="index.html">Volver a inicio</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<label>Correo electrónico</label><br>
-<input type="email"><br><br>
+    <div class="container mb-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                
+                <div class="card polaris-card p-4 mt-4">
+                    <div class="text-center mb-4">
+                        <h2 class="fw-bold text-dark">Registro de Miembros</h2>
+                        <p class="text-muted">Únete a la comunidad de exploración espacial</p>
+                    </div>
 
-<label>Proyecto de interés</label><br>
-<select>
-<option>PolariX</option>
-<option>Mentes en Órbita</option>
-<option>Hydronautas</option>
-</select><br><br>
+                    <form class="form">
+                        
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nombre completo</label>
+                            <input type="text" class="form-control" id="name" placeholder="Tu nombre completo" required>
+                        </div>
 
-<button type="submit">Enviar</button>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="tucorreo@gmail.com" required>
+                        </div>
 
-</form>
+                        <div class="mb-3">
+                            <label for="semestre" class="form-label">Semestre actual</label>
+                            <select class="form-select" id="semestre" required>
+                                <option value="" selected disabled>Selecciona tu semestre</option>
+                                <option>1° Semestre</option>
+                                <option>2° Semestre</option>
+                                <option>3° Semestre</option>
+                                <option>4° Semestre</option>
+                                <option>5° Semestre</option>
+                                <option>6° Semestre</option>
+                                <option>7° Semestre</option>
+                                <option>8° Semestre</option>
+                                <option>9° Semestre</option>
+                                <option>10° Semestre</option>
+                            </select>
+                        </div>    
+
+                        <div class="mb-3">
+                            <label for="proyect" class="form-label">Proyecto de interés</label>
+                            <select class="form-select" id="proyect" required>
+                                <option value="" selected disabled>Seleccione una opción</option>
+                                <option>PolariX</option>
+                                <option>Mentes en Órbita</option>
+                                <option>Hydronautas</option>
+                            </select>
+                        </div>    
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="password" class="form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="password" placeholder="Ingrese contraseña" required>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="password_confirm" class="form-label">Confirmar contraseña</label>
+                                <input type="password" class="form-control" id="password_confirm" placeholder="Confirme contraseña" required>
+                            </div>
+                        </div>
+
+                        <div class="form-check mb-4 mt-2">
+                            <input class="form-check-input" type="checkbox" id="terminos" required>
+                            <label class="form-check-label text-muted" for="terminos">
+                                Al registrarte, aceptas formar parte de la comunidad POLARIS
+                            </label>
+                        </div>
+                        
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-dark btn-lg">Registrarme</button>
+                        </div>
+
+                        <div class="text-center mt-4">
+                            <p class="text-muted">¿Ya tienes una cuenta? <a href="#" class="text-decoration-none text-primary">Inicia sesión</a></p>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
